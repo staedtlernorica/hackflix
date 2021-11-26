@@ -17,7 +17,7 @@ function MovieDetails(){
           }).then((response) => {
             setIndividualMovie(response.data)
         })
-    }, [])
+    }, [movieID.movieID])
 
     const {original_title, original_tagline, overview, poster_path} = individualMovie;
 
